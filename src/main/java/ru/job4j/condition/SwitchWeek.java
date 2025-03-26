@@ -22,15 +22,18 @@ public class SwitchWeek {
             case 6:
                 name = "Суббота";
                 break;
-            default:
+            case 7:
                 name = "Воскресенье";
+                break;
+            default:
+                name = "Ошибка";
                 break;
         }
         return name;
     }
 
     public static void main(String[] args) {
-        int day = 2;
+        int day = 7;
         String name = SwitchWeek.nameOfDay(day);
         System.out.println(day + " - " + name);
     }
