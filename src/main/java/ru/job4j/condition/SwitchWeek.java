@@ -30,7 +30,7 @@ public class SwitchWeek {
     }
 
     public static void main(String[] args) {
-        int day = 1;
+        int day = 2;
         String name = SwitchWeek.nameOfDay(day);
         System.out.println(day + " - " + name);
     }
