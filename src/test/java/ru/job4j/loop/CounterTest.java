@@ -50,4 +50,22 @@ class CounterTest {
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenCounter4To9Then18() {
+        int start = 4;
+        int finish = 9;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 18;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenCounterMinus2To4Then4() {
+        int start = -2;
+        int finish = 4;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 4;
+        assertThat(result).isEqualTo(expected);
+    }
 }
