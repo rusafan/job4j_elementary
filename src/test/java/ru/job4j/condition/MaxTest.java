@@ -30,4 +30,25 @@ class MaxTest {
         int expected = 7;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenMax1To3To5Then5() {
+        int left = 1;
+        int right = 3;
+        int middle = 5;
+        int result = Max.max(left, right, middle);
+        int expected = 5;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax0To2To7To9Then9() {
+        int left = 0;
+        int right = 2;
+        int middle = 7;
+        int next = 9;
+        int result = Max.max(left, right, middle, next);
+        int expected = 9;
+        assertThat(result).isEqualTo(expected);
+    }
 }
