@@ -8,12 +8,12 @@ public class Max {
 
     public static int max(int left, int right, int middle) {
         int result = left > right ? left : right;
-        return max(result, middle);
+        return max(max(left, right), middle);
     }
 
     public static int max(int left, int right, int middle, int next) {
         int result = left > right ? left : right;
-        return max(result, middle, next);
+        return max(max(max(left, right), middle), next);
     }
 
     public static void main(String[] args) {
