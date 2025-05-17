@@ -32,7 +32,7 @@ class PointTest {
     }
 
     @Test
-    void when100to222then5() {
+    void when100to222then3() {
         double expected = 3;
         Point i = new Point(1, 0, 0);
         Point j = new Point(2, 2, 2);
