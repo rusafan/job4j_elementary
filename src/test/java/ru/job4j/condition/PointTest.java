@@ -30,4 +30,13 @@ class PointTest {
         double output = g.distance(h);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when100to222then5() {
+        double expected = 3;
+        Point i = new Point(1, 0, 0);
+        Point j = new Point(2, 2, 2);
+        double output = i.distance3d(j);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
